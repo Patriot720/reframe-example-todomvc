@@ -138,13 +138,13 @@ Compiling build :client to "resources/public/js/client.js" from ["src" "../../sr
 
   [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/events.cljs [line 136, col 38] Unmatched delimiter ).[0m
 
-  [36m134[0m  [36m  ;; handler[0m
-  [36m135[0m  [36m (fn [db [new-filter-kw]     ;; new-filter-kw is one of :all, :active or :done[0m
+  [36m134[0m  [36m  
+  [36m135[0m  [36m (fn [db [new-filter-kw]     
   [33m136[0m  [1m   (assoc db :showing new-filter-kw)))[0m
   [0m   [0m  [33m   /run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/events.cljs [line 136, col 38] Unmatched delimiter ).[0m
   [36m137[0m  [36m[0m
-  [36m138[0m  [36m;; NOTE: below is a rewrite of the event handler (above) using a `path` Interceptor[0m
-  [36m139[0m  [36m;; You'll find it illuminating to compare this rewrite with the original.[0m
+  [36m138[0m  [36m
+  [36m139[0m  [36m
 
 [36m----  Reader Error : Please see src/todomvc/events.cljs  ----[0m
 Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
@@ -629,17 +629,17 @@ Compiling build :client to "resources/public/js/client.js" from ["src" "../../sr
 
   [1mUse of undeclared Var todomvc.db/key?[0m
 
-  [36m27[0m  [36m                #(instance? PersistentTreeMap %)           ;; is a sorted-map (not just a map)[0m
+  [36m27[0m  [36m                #(instance? PersistentTreeMap %)           
   [36m28[0m  [36m))[0m
   [36m29[0m  [36m[0m
-  [36m30[0m  [36m(s/def ::showing                                            ;; what todos are shown to the user?[0m
+  [36m30[0m  [36m(s/def ::showing                                            
   [33m31[0m  [1m  key?)[0m
   [0m  [0m  [33m  ^--- Use of undeclared Var todomvc.db/key?[0m
   [36m32[0m  [36m(s/def ::db (s/keys :req-un [::todos ::showing]))[0m
   [36m33[0m  [36m[0m
-  [36m34[0m  [36m;; -- Default app-db Value  ---------------------------------------------------[0m
-  [36m35[0m  [36m;;[0m
-  [36m36[0m  [36m;; When the application first starts, this will be the value put in app-db[0m
+  [36m34[0m  [36m
+  [36m35[0m  [36m
+  [36m36[0m  [36m
 
 [36m----  Compiler Warning : Please see src/todomvc/db.cljs  ----[0m
 [32mSuccessfully compiled build :client to "resources/public/js/client.js" in 5.039 seconds.[0m
@@ -656,3 +656,40 @@ notifying browser that file changed:  resources/public/js/todomvc/db.js
 Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
 [32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.258 seconds.[0m
 notifying browser that file changed:  resources/public/js/todomvc/db.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.748 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/db.js
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+notifying browser that file changed:  resources/public/js/todomvc/core.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 5.508 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/db.js
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.873 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/db.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.293 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.572 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.68 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.204 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.348 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.315 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/db.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.681 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.318 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
