@@ -20,26 +20,38 @@
  (fn [sorted-todos query-v _]
    (vals sorted-todos)))
 
-(reg-sub
- :visible-todos (fn [query-v _]
-                  [(subscribe [:todos])
-                   (subscribe [:showing])]) (fn [[todos showing] _]
-                                              (let [filter-fn (case showing
-                                                                :active (complement :done)
-                                                                :done   :done
-                                                                :all    identity)]
-                                                (filter filter-fn todos))))
-
 #_(reg-sub
-   :visible-todos
-   :<- [:todos]
-   :<- [:showing]
-   (fn [[todos showing] _]
-     (let [filter-fn (case showing
-                       :active (complement :done)
-                       :done   :done
-                       :all    identity)]
-       (filter filter-fn todos))))
+   :visible-todos (fn [query-v _]
+                    [(subscribe [:todos])
+                     (subscribe [:showing])]) (fn [[todos showing] _]
+                                                (let [filter-fn (case showing
+                                                                  :active (complement :done)
+                                                                  :done   :done
+                                                                  :all    identity)]
+                                                  (filter filter-fn todos))))
+
+(defn tag-equals [todo])
+(reg-sub
+ :visible-todos
+ :<- [:todos]
+ :<- [:showing]
+ (fn [[todos showing] _]
+   (let [filter-fn (case showing
+                     :active (complement :done)
+                     :done   :done
+                     :all    identity
+                     (fn [todo]
+                       (= (:tag todo) (name showing))))]
+     (filter filter-fn todos))))
+
+; TODO add tests
+(defn select-tags [todos _]
+  (map :tag todos))
+
+(reg-sub
+ :tags
+ :<- [:todos]
+ select-tags)
 
 (reg-sub
  :all-complete?

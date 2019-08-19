@@ -21,6 +21,8 @@ button {
 	font-smoothing: antialiased;
 }
 .tag{
+	min-height: 30px;
+	width: 100%;
 	background: blue;
 	text-decoration: none;
 	color: white;
