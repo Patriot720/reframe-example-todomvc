@@ -44,7 +44,12 @@
                        (= (:tag todo) (name showing))))]
      (filter filter-fn todos))))
 
-; TODO add tests
+     ; TODO add multiple tags
+     ; TODO refactor some stuff
+     ; TODO git flow
+     ; TODO add tags deletion
+     ; TODO fix theme
+     ; TODO add mui tags maybe
 (defn select-tags [todos & args]
   (->> (map :tag todos)
        (filter some?)
