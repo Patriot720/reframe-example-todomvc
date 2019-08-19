@@ -45,8 +45,10 @@
      (filter filter-fn todos))))
 
 ; TODO add tests
-(defn select-tags [todos _]
-  (map :tag todos))
+(defn select-tags [todos & args]
+  (->> (map :tag todos)
+       (filter some?)
+       distinct))
 
 (reg-sub
  :tags

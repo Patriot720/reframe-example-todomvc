@@ -82,6 +82,7 @@
         showing       @(subscribe [:showing])
         tags          @(subscribe [:tags])
         a-fn          (fn [filter-kw txt]
+
                         [:a {:class (when (= filter-kw showing) "selected")
                              :href (str "#/" (name filter-kw))} txt])]
     [:footer#footer
@@ -93,7 +94,7 @@
       [:li (a-fn :done   "Completed")]
       (for [tag tags]
         (if tag
-          ^{:key (:id tag)} [:li (a-fn tag tag)]))]
+          ^{:key tag} [:li  (a-fn tag tag)]))]
      (when (pos? done)
        [:button#clear-completed {:on-click #(dispatch [:clear-completed])}
         "Clear completed"])]))

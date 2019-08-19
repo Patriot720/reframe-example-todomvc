@@ -1260,3 +1260,678 @@ notifying browser that file changed:  resources/public/js/todomvc/subs.js
 Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
 [32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.168 seconds.[0m
 notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.448 seconds.[0m
+[36m----  Exception    ----[0m
+
+  [1mAssert failed: file:/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs does not provide a namespace
+(first provides)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.AssertionError: Assert failed: file:/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs does not provide a namespace
+(first provides)
+ at cljs.closure$javascript_file.invokeStatic (closure.clj:497)
+    cljs.closure$javascript_file.invoke (closure.clj:493)
+    cljs.closure$map__GT_javascript_file.invokeStatic (closure.clj:502)
+    cljs.closure$map__GT_javascript_file.invoke (closure.clj:500)
+    cljs.closure$compiled_file.invokeStatic (closure.clj:585)
+    cljs.closure$compiled_file.invoke (closure.clj:577)
+    cljs.closure$compile_file.invokeStatic (closure.clj:647)
+    cljs.closure$compile_file.invoke (closure.clj:625)
+    cljs.closure$fn__5294.invokeStatic (closure.clj:721)
+    cljs.closure/fn (closure.clj:715)
+    cljs.closure$fn__5207$G__5200__5214.invoke (closure.clj:543)
+    cljs.closure$compile_sources$iter__5420__5424$fn__5425.invoke (closure.clj:1081)
+    clojure.lang.LazySeq.sval (LazySeq.java:42)
+    clojure.lang.LazySeq.seq (LazySeq.java:51)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:709)
+    clojure.core$next__5371.invokeStatic (core.clj:64)
+    clojure.core$dorun.invokeStatic (core.clj:3142)
+    clojure.core$doall.invokeStatic (core.clj:3148)
+    clojure.core$doall.invoke (core.clj:3148)
+    cljs.closure$compile_sources.invokeStatic (closure.clj:1077)
+    cljs.closure$compile_sources.invoke (closure.clj:1066)
+    cljs.closure$build.invokeStatic (closure.clj:2995)
+    cljs.closure$build.invoke (closure.clj:2903)
+    cljs.build.api$build.invokeStatic (api.clj:208)
+    cljs.build.api$build.invoke (api.clj:189)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invokeStatic (cljs_autobuild.clj:28)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:27)
+    figwheel_sidecar.build_middleware.injection$hook$fn__19733.invoke (injection.clj:94)
+    figwheel_sidecar.components.cljs_autobuild$notify_command_hook$fn__20055.invoke (cljs_autobuild.clj:69)
+    figwheel_sidecar.components.cljs_autobuild$figwheel_start_and_end_messages$fn__20045.invoke (cljs_autobuild.clj:48)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__19914.invoke (notifications.clj:179)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__19971.invoke (clj_reloading.clj:111)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__20004.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__20059.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__20101.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__362$fn__363.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__362.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__5739.invoke (core.clj:2033)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    java.lang.Thread.run (Thread.java:835)
+
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.27 seconds.[0m
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/testing/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.545 seconds.[0m
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 3.06 seconds.[0m
+[36m----  Exception    ----[0m
+
+  [1mAssert failed: file:/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/tests_runner.cljs does not provide a namespace
+(first provides)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.AssertionError: Assert failed: file:/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/tests_runner.cljs does not provide a namespace
+(first provides)
+ at cljs.closure$javascript_file.invokeStatic (closure.clj:497)
+    cljs.closure$javascript_file.invoke (closure.clj:493)
+    cljs.closure$map__GT_javascript_file.invokeStatic (closure.clj:502)
+    cljs.closure$map__GT_javascript_file.invoke (closure.clj:500)
+    cljs.closure$compiled_file.invokeStatic (closure.clj:585)
+    cljs.closure$compiled_file.invoke (closure.clj:577)
+    cljs.closure$compile_file.invokeStatic (closure.clj:647)
+    cljs.closure$compile_file.invoke (closure.clj:625)
+    cljs.closure$fn__5294.invokeStatic (closure.clj:721)
+    cljs.closure/fn (closure.clj:715)
+    cljs.closure$fn__5207$G__5200__5214.invoke (closure.clj:543)
+    cljs.closure$compile_sources$iter__5420__5424$fn__5425.invoke (closure.clj:1081)
+    clojure.lang.LazySeq.sval (LazySeq.java:42)
+    clojure.lang.LazySeq.seq (LazySeq.java:51)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:709)
+    clojure.core$next__5371.invokeStatic (core.clj:64)
+    clojure.core$dorun.invokeStatic (core.clj:3142)
+    clojure.core$doall.invokeStatic (core.clj:3148)
+    clojure.core$doall.invoke (core.clj:3148)
+    cljs.closure$compile_sources.invokeStatic (closure.clj:1077)
+    cljs.closure$compile_sources.invoke (closure.clj:1066)
+    cljs.closure$build.invokeStatic (closure.clj:2995)
+    cljs.closure$build.invoke (closure.clj:2903)
+    cljs.build.api$build.invokeStatic (api.clj:208)
+    cljs.build.api$build.invoke (api.clj:189)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invokeStatic (cljs_autobuild.clj:28)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:27)
+    figwheel_sidecar.build_middleware.injection$hook$fn__19733.invoke (injection.clj:94)
+    figwheel_sidecar.components.cljs_autobuild$notify_command_hook$fn__20055.invoke (cljs_autobuild.clj:69)
+    figwheel_sidecar.components.cljs_autobuild$figwheel_start_and_end_messages$fn__20045.invoke (cljs_autobuild.clj:48)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__19914.invoke (notifications.clj:179)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__19971.invoke (clj_reloading.clj:111)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__20004.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__20059.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__20101.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__362$fn__363.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__362.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__5739.invoke (core.clj:2033)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    java.lang.Thread.run (Thread.java:835)
+
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.889 seconds.[0m
+[36m----  Could not Analyze  src/tests/tests_runner.cljs  ----[0m
+
+  [1mNo such namespace: testing.app-test, could not locate testing/app_test.cljs, testing/app_test.cljc, or JavaScript source providing "testing.app-test" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/tests/tests_runner.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.581 seconds.[0m
+[36m----  Could not Analyze  src/tests/tests_runner.cljs  ----[0m
+
+  [1mNo such namespace: tests.app-test, could not locate tests/app_test.cljs, tests/app_test.cljc, or JavaScript source providing "tests.app-test" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/tests/tests_runner.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 1.31 seconds.[0m
+[36m----  Could not Analyze  src/tests/test_runner.cljs  ----[0m
+
+  [1mNo such namespace: tests.app-test, could not locate tests/app_test.cljs, tests/app_test.cljc, or JavaScript source providing "tests.app-test" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/tests/test_runner.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.751 seconds.[0m
+[36m----  Could not Analyze  src/tests/test_runner.cljs   line:12  column:3  ----[0m
+
+  [1mAssert failed: Namespace tests.app-test does not exist
+(ana-api/find-ns ns)[0m
+
+  [36m10[0m  [36m(defn run-all-tests[0m
+  [36m11[0m  [36m  [][0m
+  [33m12[0m  [1m  (run-tests 'tests.app-test[0m
+  [0m  [0m  [33m  ^--- Assert failed: Namespace tests.app-test does not exist
+(ana-api/find-ns ns)[0m
+  [36m13[0m  [36m             'tests.core-test))[0m
+
+[36m----  Analysis Error : Please see src/tests/test_runner.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.828 seconds.[0m
+[36m----  Could not Analyze  src/tests/test_runner.cljs   line:11  column:3  ----[0m
+
+  [1mAssert failed: Namespace tests.app-test does not exist
+(ana-api/find-ns ns)[0m
+
+  [36m 9[0m  [36m(defn run-all-tests[0m
+  [36m10[0m  [36m  [][0m
+  [33m11[0m  [1m  (run-tests 'tests.app-test[0m
+  [0m  [0m  [33m  ^--- Assert failed: Namespace tests.app-test does not exist
+(ana-api/find-ns ns)[0m
+  [36m12[0m  [36m             'tests.core-test))[0m
+
+[36m----  Analysis Error : Please see src/tests/test_runner.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.886 seconds.[0m
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/tests/test_runner.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.824 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 0.704 seconds.[0m
+[36m----  Could not Read  src/tests/core_test.cljs   line:4 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs [line 4, col 8] Unmatched delimiter ).[0m
+
+  [36m2[0m  [36m  (:require [cljs.test :refer-macros [deftest is]][0m
+  [36m3[0m  [36m      [todomvc.subs[0m
+  [33m4[0m  [1m      ))[0m
+  [0m [0m  [33m      /run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs [line 4, col 8] Unmatched delimiter ).[0m
+  [36m5[0m  [36m[0m
+  [36m6[0m  [36m(deftest i-should-fail[0m
+  [36m7[0m  [36m  (is (= 1 0)))[0m
+
+[36m----  Reader Error : Please see src/tests/core_test.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 4.492 seconds.[0m
+[36m----  Could not Read  src/tests/core_test.cljs   line:18 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs [line 18, col 1] Unexpected EOF while reading item 3 of list, starting at line 14 and column 5.[0m
+
+[36m----  Reader Error : Please see src/tests/core_test.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.301 seconds.[0m
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.56 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.285 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.893 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.372 seconds.[0m
+[36m----  Could not Read  src/tests/core_test.cljs   line:16 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs [line 16, col 1] Unexpected EOF while reading item 4 of list, starting at line 11 and column 1.[0m
+
+[36m----  Reader Error : Please see src/tests/core_test.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/tests/core_test.cljs   line:12  column:17  ----[0m
+
+  [1mWrong number of args (1) passed to todomvc.subs/select-tags[0m
+
+  [36m 8[0m  [36m             {}[0m
+  [36m 9[0m  [36m             {:tag "lul"}))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(deftest tag-filtering[0m
+  [33m12[0m  [1m  (is (= (count (subs/select-tags todos)) 1)))[0m
+  [0m  [0m  [33m                ^--- Wrong number of args (1) passed to todomvc.subs/select-tags[0m
+  [36m13[0m  [36m[0m
+  [36m14[0m  [36m(deftest i-should-succeed[0m
+  [36m15[0m  [36m  (is (= 1 1)))[0m
+
+[36m----  Compiler Warning : Please see src/tests/core_test.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.315 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.57 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.672 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/tests/core_test.cljs   line:12  column:18  ----[0m
+
+  [1mUse of undeclared Var tests.core-test/filter-fn[0m
+
+  [36m 8[0m  [36m             {}[0m
+  [36m 9[0m  [36m             {:tag "lul"}))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(deftest tag-filtering[0m
+  [33m12[0m  [1m  (is (= (count (filter-fn subs/select-tags todos)) 1)))[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var tests.core-test/filter-fn[0m
+  [36m13[0m  [36m[0m
+  [36m14[0m  [36m(deftest i-should-succeed[0m
+  [36m15[0m  [36m  (is (= 1 1)))[0m
+
+[36m----  Compiler Warning : Please see src/tests/core_test.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.647 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/tests/core_test.cljs   line:12  column:18  ----[0m
+
+  [1mUse of undeclared Var tests.core-test/filter-fw[0m
+
+  [36m 8[0m  [36m             {}[0m
+  [36m 9[0m  [36m             {:tag "lul"}))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(deftest tag-filtering[0m
+  [33m12[0m  [1m  (is (= (count (filter-fw subs/select-tags todos)) 1)))[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var tests.core-test/filter-fw[0m
+  [36m13[0m  [36m[0m
+  [36m14[0m  [36m(deftest i-should-succeed[0m
+  [36m15[0m  [36m  (is (= 1 1)))[0m
+
+[36m----  Compiler Warning : Please see src/tests/core_test.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.542 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.408 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/tests/core_test.cljs   line:12  column:17  ----[0m
+
+  [1mWrong number of args (1) passed to todomvc.subs/select-tags[0m
+
+  [36m 8[0m  [36m             {}[0m
+  [36m 9[0m  [36m             {:tag "lul"}))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(deftest tag-filtering[0m
+  [33m12[0m  [1m  (is (= (count (subs/select-tags todos)) 1)))[0m
+  [0m  [0m  [33m                ^--- Wrong number of args (1) passed to todomvc.subs/select-tags[0m
+  [36m13[0m  [36m[0m
+  [36m14[0m  [36m(deftest i-should-succeed[0m
+  [36m15[0m  [36m  (is (= 1 1)))[0m
+
+[36m----  Compiler Warning : Please see src/tests/core_test.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.873 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/tests/core_test.cljs   line:12  column:17  ----[0m
+
+  [1mWrong number of args (1) passed to todomvc.subs/select-tags[0m
+
+  [36m 8[0m  [36m             {}[0m
+  [36m 9[0m  [36m             {:tag "lul"}))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(deftest tag-filtering[0m
+  [33m12[0m  [1m  (is (= (count (subs/select-tags todos)) 1)))[0m
+  [0m  [0m  [33m                ^--- Wrong number of args (1) passed to todomvc.subs/select-tags[0m
+  [36m13[0m  [36m[0m
+  [36m14[0m  [36m(deftest i-should-succeed[0m
+  [36m15[0m  [36m  (is (= 1 1)))[0m
+
+[36m----  Compiler Warning : Please see src/tests/core_test.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.841 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/tests/core_test.cljs   line:12  column:17  ----[0m
+
+  [1mWrong number of args (1) passed to todomvc.subs/select-tags[0m
+
+  [36m 8[0m  [36m             {}[0m
+  [36m 9[0m  [36m             {:tag "lul"}))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(deftest tag-filtering[0m
+  [33m12[0m  [1m  (is (= (count (subs/select-tags todos)) 1)))[0m
+  [0m  [0m  [33m                ^--- Wrong number of args (1) passed to todomvc.subs/select-tags[0m
+  [36m13[0m  [36m[0m
+  [36m14[0m  [36m(deftest i-should-succeed[0m
+  [36m15[0m  [36m  (is (= 1 1)))[0m
+
+[36m----  Compiler Warning : Please see src/tests/core_test.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.094 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.945 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.174 seconds.[0m
+[36m----  Could not Read  src/todomvc/subs.cljs   line:74 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/subs.cljs [line 74, col 1] Unexpected EOF while reading item 8 of list, starting at line 48 and column 1.[0m
+
+[36m----  Reader Error : Please see src/todomvc/subs.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.349 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.958 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.081 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.252 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.078 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.805 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.368 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.148 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.927 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.109 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.342 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.059 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.578 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.37 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.471 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.867 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.006 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.967 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.865 seconds.[0m
+[36m----  Could not Read  src/tests/core_test.cljs   line:16 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs [line 16, col 1] Unexpected EOF while reading item 3 of list, starting at line 11 and column 3.[0m
+
+[36m----  Reader Error : Please see src/tests/core_test.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.279 seconds.[0m
+[36m----  Could not Read  src/tests/core_test.cljs   line:16 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/tests/core_test.cljs [line 16, col 1] Unexpected EOF while reading item 5 of list, starting at line 9 and column 1.[0m
+
+[36m----  Reader Error : Please see src/tests/core_test.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/tests/core_test.cljs   line:11  column:17  ----[0m
+
+  [1mWrong number of args (0) passed to todomvc.subs/select-tags[0m
+
+  [36m 7[0m  [36m             {:tag "lul"}))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(deftest tag-filtering[0m
+  [36m10[0m  [36m  (is (= (count (subs/select-tags todos)) 1))[0m
+  [33m11[0m  [1m  (is (= (first (subs/select-tags)) "lul")))[0m
+  [0m  [0m  [33m                ^--- Wrong number of args (0) passed to todomvc.subs/select-tags[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(deftest i-should-succeed[0m
+  [36m14[0m  [36m  (is (= 1 1)))[0m
+
+[36m----  Compiler Warning : Please see src/tests/core_test.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.502 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.995 seconds.[0m
+notifying browser that file changed:  resources/public/js/tests/core_test.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.567 seconds.[0m
+[36m----  Could not Read  src/todomvc/subs.cljs   line:76 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/subs.cljs [line 76, col 1] Unexpected EOF while reading item 8 of list, starting at line 48 and column 1.[0m
+
+[36m----  Reader Error : Please see src/todomvc/subs.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.377 seconds.[0m
+[36m----  Could not Read  src/todomvc/subs.cljs   line:78 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/subs.cljs [line 78, col 1] Unexpected EOF while reading item 8 of list, starting at line 48 and column 1.[0m
+
+[36m----  Reader Error : Please see src/todomvc/subs.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.769 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.174 seconds.[0m
+[36m----  Could not Read  src/todomvc/subs.cljs   line:78 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/subs.cljs [line 78, col 1] Unexpected EOF while reading item 8 of list, starting at line 48 and column 1.[0m
+
+[36m----  Reader Error : Please see src/todomvc/subs.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/todomvc/subs.cljs   line:50  column:7  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/distinct[0m
+
+  [36m47[0m  [36m; TODO add tests[0m
+  [36m48[0m  [36m(defn select-tags [todos & args][0m
+  [36m49[0m  [36m  (-> (map :tag todos)[0m
+  [33m50[0m  [1m      (distinct todos)))[0m
+  [0m  [0m  [33m      ^--- Wrong number of args (2) passed to cljs.core/distinct[0m
+  [36m51[0m  [36m[0m
+  [36m52[0m  [36m(reg-sub[0m
+  [36m53[0m  [36m :tags[0m
+  [36m54[0m  [36m :<- [:todos][0m
+  [36m55[0m  [36m select-tags)[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/subs.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.459 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.289 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.547 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.16 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.685 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.194 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.462 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.205 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.21 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.548 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.194 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.441 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:77  column:39  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/todo[0m
+
+  [36m73[0m  [36m      {:for "toggle-all"}[0m
+  [36m74[0m  [36m      "Mark all as complete"][0m
+  [36m75[0m  [36m     [:ul#todo-list[0m
+  [36m76[0m  [36m      (for [todotive  visible-todos][0m
+  [33m77[0m  [1m        ^{:key (:id todo)} [todo-item todo])]]))[0m
+  [0m  [0m  [33m                                      ^--- Use of undeclared Var todomvc.views/todo[0m
+  [36m78[0m  [36m[0m
+  [36m79[0m  [36m(defn footer-controls[0m
+  [36m80[0m  [36m  [][0m
+  [36m81[0m  [36m  (let [[active done] @(subscribe [:footer-counts])[0m
+  [36m82[0m  [36m        showing       @(subscribe [:showing])[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:77  column:21  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/todo[0m
+
+  [36m73[0m  [36m      {:for "toggle-all"}[0m
+  [36m74[0m  [36m      "Mark all as complete"][0m
+  [36m75[0m  [36m     [:ul#todo-list[0m
+  [36m76[0m  [36m      (for [todotive  visible-todos][0m
+  [33m77[0m  [1m        ^{:key (:id todo)} [todo-item todo])]]))[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var todomvc.views/todo[0m
+  [36m78[0m  [36m[0m
+  [36m79[0m  [36m(defn footer-controls[0m
+  [36m80[0m  [36m  [][0m
+  [36m81[0m  [36m  (let [[active done] @(subscribe [:footer-counts])[0m
+  [36m82[0m  [36m        showing       @(subscribe [:showing])[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:77  column:39  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/todo[0m
+
+  [36m73[0m  [36m      {:for "toggle-all"}[0m
+  [36m74[0m  [36m      "Mark all as complete"][0m
+  [36m75[0m  [36m     [:ul#todo-list[0m
+  [36m76[0m  [36m      (for [todotive  visible-todos][0m
+  [33m77[0m  [1m        ^{:key (:id todo)} [todo-item todo])]]))[0m
+  [0m  [0m  [33m                                      ^--- Use of undeclared Var todomvc.views/todo[0m
+  [36m78[0m  [36m[0m
+  [36m79[0m  [36m(defn footer-controls[0m
+  [36m80[0m  [36m  [][0m
+  [36m81[0m  [36m  (let [[active done] @(subscribe [:footer-counts])[0m
+  [36m82[0m  [36m        showing       @(subscribe [:showing])[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:77  column:21  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/todo[0m
+
+  [36m73[0m  [36m      {:for "toggle-all"}[0m
+  [36m74[0m  [36m      "Mark all as complete"][0m
+  [36m75[0m  [36m     [:ul#todo-list[0m
+  [36m76[0m  [36m      (for [todotive  visible-todos][0m
+  [33m77[0m  [1m        ^{:key (:id todo)} [todo-item todo])]]))[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var todomvc.views/todo[0m
+  [36m78[0m  [36m[0m
+  [36m79[0m  [36m(defn footer-controls[0m
+  [36m80[0m  [36m  [][0m
+  [36m81[0m  [36m  (let [[active done] @(subscribe [:footer-counts])[0m
+  [36m82[0m  [36m        showing       @(subscribe [:showing])[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.966 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.789 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.958 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.716 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.979 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.621 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.764 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.174 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.64 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.219 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 2.063 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 1.975 seconds.[0m
+[36m----  Could not Read  src/todomvc/views.cljs   line:98 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/views.cljs [line 98, col 39] Unmatched delimiter }.[0m
+
+  [36m 96[0m  [36m  (for [tag tags][0m
+  [36m 97[0m  [36m    (if tag[0m
+  [33m 98[0m  [1m      [:li ^{:key (:id (gen-key)} (a-fn tag tag)]))]][0m
+  [0m   [0m  [33m      /run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/views.cljs [line 98, col 39] Unmatched delimiter }.[0m
+  [36m 99[0m  [36m(when (pos? done)[0m
+  [36m100[0m  [36m  [:button#clear-completed {:on-click #(dispatch [:clear-completed])}[0m
+  [36m101[0m  [36m   "Clear completed"])]))[0m
+
+[36m----  Reader Error : Please see src/todomvc/views.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.367 seconds.[0m
+[36m----  Could not Read  src/todomvc/views.cljs   line:98 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/views.cljs [line 98, col 39] Unmatched delimiter }.[0m
+
+  [36m 96[0m  [36m  (for [tag tags][0m
+  [36m 97[0m  [36m    (if tag[0m
+  [33m 98[0m  [1m      [:li ^{:key (:id (gen-key)} (a-fn tag tag)]))]][0m
+  [0m   [0m  [33m      /run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/views.cljs [line 98, col 39] Unmatched delimiter }.[0m
+  [36m 99[0m  [36m(when (pos? done)[0m
+  [36m100[0m  [36m  [:button#clear-completed {:on-click #(dispatch [:clear-completed])}[0m
+  [36m101[0m  [36m   "Clear completed"])]))[0m
+
+[36m----  Reader Error : Please see src/todomvc/views.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.354 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[31mFailed to compile build :client from ["src" "../../src"] in 2.202 seconds.[0m
+[36m----  Could not Read  src/todomvc/views.cljs   line:100 ----[0m
+
+  [1m/run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/views.cljs [line 100, col 29] Unmatched delimiter ].[0m
+
+  [36m 98[0m  [36m     (when (pos? done)[0m
+  [36m 99[0m  [36m       [:button#clear-completed {:on-click #(dispatch [:clear-completed])}[0m
+  [33m100[0m  [1m        "Clear completed"])]))[0m
+  [0m   [0m  [33m        /run/media/andrew/6D3CD7876D7722E4/Home/WorkAndHobby/Programming/reframe/re-frame/examples/todomvc/src/todomvc/views.cljs [line 100, col 29] Unmatched delimiter ].[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(defn task-entry[0m
+  [36m103[0m  [36m  [][0m
+
+[36m----  Reader Error : Please see src/todomvc/views.cljs  ----[0m
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.267 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 4.611 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+[32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.604 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
