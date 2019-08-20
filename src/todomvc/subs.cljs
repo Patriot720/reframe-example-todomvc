@@ -44,7 +44,7 @@
                        (= (:tag todo) (name showing))))]
      (filter filter-fn todos))))
 
-     ; TODO add multiple tags
+     ; TODO add multiple tags for a single item
      ; TODO refactor some stuff
      ; TODO git flow
      ; TODO add tags deletion

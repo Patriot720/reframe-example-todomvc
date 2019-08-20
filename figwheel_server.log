@@ -1962,3 +1962,8 @@ notifying browser that file changed:  resources/public/js/todomvc/subs.js
 Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
 [32mSuccessfully compiled build :client to "resources/public/js/client.js" in 3.12 seconds.[0m
 notifying browser that file changed:  resources/public/js/todomvc/subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+Successfully compiled build :client to "resources/public/js/client.js" in 2.625 seconds.
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources\public\js\todomvc\subs.js
