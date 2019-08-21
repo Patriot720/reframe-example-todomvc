@@ -20,7 +20,7 @@ button {
 	-moz-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-.tag{
+.tag,.tags{
 	min-height: 30px;
 	width: 100%;
 	background: blue;

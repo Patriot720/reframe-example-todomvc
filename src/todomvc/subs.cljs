@@ -41,7 +41,7 @@
                      :done   :done
                      :all    identity
                      (fn [todo]
-                       (= (:tag todo) (name showing))))]
+                       (some #{(name showing)} (:tags todo) )))]
      (filter filter-fn todos))))
 
      ; TODO add multiple tags for a single item
@@ -51,9 +51,11 @@
      ; TODO fix theme
      ; TODO add mui tags maybe
 (defn select-tags [todos & args]
-  (->> (map :tag todos)
+  (->> (reduce (fn [item1 item2]
+                 (concat item1 (:tags item2))) [] todos)
        (filter some?)
-       distinct))
+       distinct
+       ))
 
 (reg-sub
  :tags

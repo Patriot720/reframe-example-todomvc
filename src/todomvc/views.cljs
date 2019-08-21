@@ -26,7 +26,7 @@
   []
   (let [editing (reagent/atom false)
         tag-editing (reagent/atom false)]
-    (fn [{:keys [id done title tag]}]
+    (fn [{:keys [id done title tags]}]
       [:li {:class (str (when done "completed ")
                         (when (or @editing @tag-editing) "editing"))}
        [:div.view
@@ -37,19 +37,27 @@
         [:label
          {:on-double-click #(reset! editing true)}
          title]
-        [:div
-         {:class "tag"
+        [:div {:class "tags"
           :on-double-click (fn []
-                             (println "double click")
-                             (reset! tag-editing true))}
-         tag]
+                              (println "double click")
+                              (reset! tag-editing true))}
+
+        (for [tag tags]
+          ^{:key tag}
+          [:div
+           {:class "tag" ;; TODO add tag editing
+          ; :on-double-click (fn []
+          ;                     (println "double click")
+          ;                     (reset! tag-editing true))}
+            }
+           tag])
+        ]
         [:button.destroy
          {:on-click #(dispatch [:delete-todo id])}]]
        (when @tag-editing
          [todo-input
           {:class "edit"
-           :title tag
-           :on-save #(dispatch [:save-tag id %])
+           :on-save #(dispatch [:add-tag id %])
            :on-stop #(reset! tag-editing false)}])
        (when @editing
          [todo-input
@@ -83,7 +91,7 @@
         tags          @(subscribe [:tags])
         a-fn          (fn [filter-kw txt]
 
-                        [:a {:class (when (= filter-kw showing) "selected")
+                        [:a {:class (when (= filter-kw showing) "selected") ;; TODO fix for tags
                              :href (str "#/" (name filter-kw))} txt])]
     [:footer#footer
      [:span#todo-count
@@ -94,7 +102,8 @@
       [:li (a-fn :done   "Completed")]
       (for [tag tags]
         (if tag
-          ^{:key tag} [:li  (a-fn tag tag)]))]
+          ^{:key tag} 
+          [:li  (a-fn tag tag)]))]
      (when (pos? done)
        [:button#clear-completed {:on-click #(dispatch [:clear-completed])}
         "Clear completed"])]))
