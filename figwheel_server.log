@@ -2898,3 +2898,17 @@ notifying browser that file changed:  resources\public\js\todomvc\views.js
 notifying browser that file changed:  resources\public\js\todomvc\events.js
 notifying browser that file changed:  resources\public\js\tests\core_test.js
 notifying browser that file changed:  resources\public\js\todomvc\subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+Successfully compiled build :client to "resources/public/js/client.js" in 1.598 seconds.
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources\public\js\todomvc\views.js
+notifying browser that file changed:  resources\public\js\todomvc\events.js
+notifying browser that file changed:  resources\public\js\tests\core_test.js
+notifying browser that file changed:  resources\public\js\todomvc\subs.js
+Compiling build :client to "resources/public/js/client.js" from ["src" "../../src"]...
+Successfully compiled build :client to "resources/public/js/client.js" in 1.551 seconds.
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources\public\js\todomvc\views.js
+notifying browser that file changed:  resources\public\js\todomvc\events.js
+notifying browser that file changed:  resources\public\js\tests\core_test.js
+notifying browser that file changed:  resources\public\js\todomvc\subs.js
