@@ -63,11 +63,19 @@
  (fn [todos [_ id title]]
    (assoc-in todos [id :title] title)))
 
+; (reg-event-db
+;  :save-tag
+;  todo-interceptors
+;  (fn [todos [_ id tag]]
+;    (assoc-in todos [id :tag] tag)))
+
+(defn add-tag [todos [_ id tag]]
+  (update-in todos [id :tags] #(conj %1 %2) tag)) ;; TODO nill check
+
 (reg-event-db
- :save-tag
+ :add-tag
  todo-interceptors
- (fn [todos [_ id tag]]
-   (assoc-in todos [id :tag] tag)))
+ add-tag)
 
 (reg-event-db
  :delete-todo
