@@ -6,13 +6,15 @@
 (s/def ::id int?)
 (s/def ::title string?)
 (s/def ::done boolean?)
-(s/def ::todo (s/keys :req-un [::id ::title ::done]))
+(s/def ::tags (s/coll-of string?))
+(s/def ::todo (s/keys :req-un [::id ::title ::done ] :opt-un [::tags]))
 (s/def ::todos (s/and
                 (s/map-of ::id ::todo)
                 #(instance? PersistentTreeMap %)))
 
 (s/def ::showing
   keyword?)
+
 (s/def ::db (s/keys :req-un [::todos ::showing]))
 
 (def default-db

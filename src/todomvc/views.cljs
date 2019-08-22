@@ -1,6 +1,7 @@
 (ns todomvc.views
   (:require [reagent.core  :as reagent]
             [re-frame.core :refer [subscribe dispatch]]
+            [todomvc.views.tags :refer [tag-list]]
             [clojure.string :as str]))
 
 (defn todo-input [{:keys [title on-save on-stop]}]
@@ -37,21 +38,7 @@
         [:label
          {:on-double-click #(reset! editing true)}
          title]
-        [:div {:class "tags"
-          :on-double-click (fn []
-                              (println "double click")
-                              (reset! tag-editing true))}
-
-        (for [tag tags]
-          ^{:key tag}
-          [:div
-           {:class "tag" ;; TODO add tag editing
-          ; :on-double-click (fn []
-          ;                     (println "double click")
-          ;                     (reset! tag-editing true))}
-            }
-           tag])
-        ]
+        [tag-list tags tag-editing]
         [:button.destroy
          {:on-click #(dispatch [:delete-todo id])}]]
        (when @tag-editing
