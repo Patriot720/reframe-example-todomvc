@@ -25,7 +25,6 @@ button {
 	min-height: 30px;
 	width: 100%;
 	text-decoration: none;
-	color: white;
 	display: inline-block;
 }
 
@@ -35,6 +34,7 @@ button {
     border-radius: 5px;
     margin: 10px;
 	background: blue;
+	color: white;
 }
 
 body {

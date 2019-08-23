@@ -26,10 +26,10 @@
 (defn todo-item
   []
   (let [editing (reagent/atom false)
-        tag-editing (reagent/atom false)]
+        ]
     (fn [{:keys [id done title tags]}]
       [:li {:class (str (when done "completed ")
-                        (when (or @editing @tag-editing) "editing"))}
+                        (when @editing "editing"))}
        [:div.view
         [:input.toggle
          {:type "checkbox"
@@ -38,14 +38,9 @@
         [:label
          {:on-double-click #(reset! editing true)}
          title]
-        [tag-list tags tag-editing]
+        [tag-list id tags]
         [:button.destroy
          {:on-click #(dispatch [:delete-todo id])}]]
-       (when @tag-editing
-         [todo-input
-          {:class "edit"
-           :on-save #(dispatch [:add-tag id %])
-           :on-stop #(reset! tag-editing false)}])
        (when @editing
          [todo-input
           {:class "edit"

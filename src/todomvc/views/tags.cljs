@@ -1,17 +1,19 @@
-(ns todomvc.views.tags)
-(defn tag-list [tags tag-editing]
-  [:div {:class "tags"
-         :on-double-click (fn []
-                            (reset! tag-editing true))}
-
-   (for [tag tags]
-     ^{:key tag}
-     [:div
-      {:class "tag"
-          ;; TODO add tag editing
-          ; :on-double-click (fn []
-          ;                     (println "double click")
-          ;                     (reset! tag-editing true))}
-       }
-      tag
-      ])])
+(ns todomvc.views.tags
+(:require [reagent.core  :as r]
+          [todomvc.views :as views]
+          [re-frame.core :refer [subscribe dispatch]])
+  )
+(defn tag-list [id tags]
+  (let [tag-adding (r/atom false)]
+    [:div
+     [:ul {:class "tags"
+           :on-double-click (fn []
+                              (reset! tag-adding true)
+                              (println @tag-adding))}
+      (for [tag tags]
+        ^{:key tag}
+        [:li
+         {:class "tag"}
+         tag])]
+     (when @tag-adding
+       [:h3 "WTF"])]))
