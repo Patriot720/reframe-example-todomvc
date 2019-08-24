@@ -17,7 +17,7 @@
        [:button#clear-completed {:on-click #(dispatch [:clear-completed])}
         "Clear completed"])]))
 
-;; TODO value of nil error
+
 (defn task-entry
   []
   [:header#header
