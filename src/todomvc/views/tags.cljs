@@ -1,4 +1,4 @@
-(ns todomvc.util.tags
+(ns todomvc.views.tags
   (:require [reagent.core  :as r]
             [todomvc.views.util :as util]
             [re-frame.core :refer [subscribe dispatch]]))

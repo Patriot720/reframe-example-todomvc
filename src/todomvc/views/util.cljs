@@ -1,7 +1,11 @@
-(ns todomvc.views.util)
+(ns todomvc.views.util
+  (:require [reagent.core  :as r]
+            [clojure.string :as str]
+            [re-frame.core :refer [subscribe dispatch]])
+  )
 
 (defn todo-input [{:keys [title on-save on-stop]}]
-  (let [val  (reagent/atom title)
+  (let [val  (r/atom title)
         stop #(do (reset! val "")
                   (when on-stop (on-stop)))
         save #(let [v (-> @val str str/trim)]
