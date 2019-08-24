@@ -1,27 +1,11 @@
 (ns todomvc.views
   (:require [reagent.core  :as reagent]
             [re-frame.core :refer [subscribe dispatch]]
-            [todomvc.views.tags :refer [tag-list]]
+            ; [todomvc.views.tags :refer [tag-list]]
+            [todomvc.views.util :refer [todo-input]]
             [clojure.string :as str]))
 
-(defn todo-input [{:keys [title on-save on-stop]}]
-  (let [val  (reagent/atom title)
-        stop #(do (reset! val "")
-                  (when on-stop (on-stop)))
-        save #(let [v (-> @val str str/trim)]
-                (on-save v)
-                (stop))]
-    (fn [props]
-      [:input (merge (dissoc props :on-save :on-stop :title)
-                     {:type        "text"
-                      :value       @val
-                      :auto-focus  true
-                      :on-blur     save
-                      :on-change   #(reset! val (-> % .-target .-value))
-                      :on-key-down #(case (.-which %)
-                                      13 (save)
-                                      27 (stop)
-                                      nil)})])))
+
 
 (defn todo-item
   []
@@ -38,7 +22,7 @@
         [:label
          {:on-double-click #(reset! editing true)}
          title]
-        [tag-list id tags]
+        ; [tag-list id tags]
         [:button.destroy
          {:on-click #(dispatch [:delete-todo id])}]]
        (when @editing
@@ -70,10 +54,10 @@
   []
   (let [[active done] @(subscribe [:footer-counts])
         showing       @(subscribe [:showing])
-        tags          @(subscribe [:tags])
+        ; tags          @(subscribe [:tags])
         a-fn          (fn [filter-kw txt]
-
-                        [:a {:class (when (= filter-kw showing) "selected") ;; TODO fix for tags
+                        ;; TODO keyword and just a string don't match
+                        [:a {:class (when (= (name filter-kw) (name showing)) "selected") ;; TODO fix for tags
                              :href (str "#/" (name filter-kw))} txt])]
     [:footer#footer
      [:span#todo-count
@@ -82,10 +66,11 @@
       [:li (a-fn :all    "All")]
       [:li (a-fn :active "Active")]
       [:li (a-fn :done   "Completed")]
-      (for [tag tags]
-        (if tag
-          ^{:key tag} 
-          [:li  (a-fn tag tag)]))]
+      ; (for [tag tags]
+      ;   (if tag
+      ;     ^{:key tag} 
+      ;     [:li  (a-fn tag tag)]))
+      ]
      (when (pos? done)
        [:button#clear-completed {:on-click #(dispatch [:clear-completed])}
         "Clear completed"])]))
