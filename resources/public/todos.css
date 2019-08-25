@@ -20,7 +20,11 @@ button {
 	-moz-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-
+.delete-tag
+{
+	height:30px;
+	width:30px;
+}
 .tags{
 	min-height: 30px;
 	width: 100%;

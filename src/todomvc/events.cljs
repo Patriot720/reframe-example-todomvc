@@ -77,6 +77,22 @@
  todo-interceptors
  add-tag)
 
+(defn delete-tag [todos [_ id tag]]
+  (update-in todos [id :tags]
+             #(remove #{tag} %)))
+
+(reg-event-db
+ :delete-tag
+todo-interceptors
+ delete-tag)
+
+(defn edit-tag [todos [_ id tag new-tag]]
+  (update-in todos [id :tags]
+             #(replace {tag new-tag} %)))
+(reg-event-db
+ :edit-tag
+ todo-interceptors
+ edit-tag)
 (reg-event-db
  :delete-todo
  todo-interceptors

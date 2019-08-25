@@ -21,6 +21,17 @@
   (is (= (events/add-tag other-todos ["" 1 "sometag"])
          {1 {:id 1 :tags ["lul" "wasas" "sometag"]}
           2 {:id 2 :tags ["nice" "wass"]}})))
+(deftest delete-tag-test
+  (is (= (:tags (get (events/delete-tag other-todos [nil 1 "wasas"]) 1))
+         ["lul"])))
+
+(deftest edit-tag-test
+  (is (= (-> (events/edit-tag other-todos [nil 1 "wasas" "nice"])
+             (get 1)
+             :tags
+             last)
+         "nice")))
+
 
 (deftest i-should-succeed
   (is (= 1 1)))
